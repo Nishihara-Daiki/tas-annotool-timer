@@ -18,9 +18,9 @@ function getCurrentStem() {
     return stem;
 }
 
-document.addEventListener("mousemove", () => lastActivity = Date.now());
-document.addEventListener("click", () => lastActivity = Date.now());
-document.addEventListener("keydown", () => lastActivity = Date.now());
+document.addEventListener("mousemove", () => { if (document.hasFocus()) lastActivity = Date.now(); } );
+document.addEventListener("click", () => { if (document.hasFocus()) lastActivity = Date.now(); } );
+document.addEventListener("keydown", () => { if (document.hasFocus()) lastActivity = Date.now(); } );
 
 setInterval(() => {
     const currentStem = getCurrentStem();
