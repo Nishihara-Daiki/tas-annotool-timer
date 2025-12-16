@@ -10,6 +10,7 @@
 ![スクショ](images/screenshot.png)
 
 ## インストール方法
+1. TAS-AnnoToolsのページは一度閉じておく。
 1. `git clone`でダウンロード、または「< >Codeボタン」から「Download ZIP」を選んで展開。
 1. `manifest.json`を修正する（次節を参照）。
 1. [chrome for developers > パッケージ化されていない拡張機能を読み込む](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world?hl=ja#load-unpacked)に従って、インストール。指定するフォルダ直下に`manifest.json`が入っていることを確認すること。
@@ -50,7 +51,7 @@
 | 黄 | 作業中か不明のため一時保留 | 過去1分以内に画面操作あり(※) | 1分以内に緑になればYes |
 | 赤 | 作業中ではない | 過去1分以上画面操作なし | No |
 
-(※)画面操作ありと判断するのは「そのサイトのタブが最前面にあり、マウスの移動・クリック・キーボード入力のいずれかがある」場合。
+(※)画面操作ありと判断するのは「そのサイトのタブが最前面にあり、サイト上でマウスの移動・クリック・キーボード入力のいずれかがある」場合。
 
 
 ## その他
